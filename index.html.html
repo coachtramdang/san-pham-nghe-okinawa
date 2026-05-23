@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+  <meta name="description" content="Thực phẩm bảo vệ sức khỏe DILI Okinawa Osake Wo Kaiteki No Densetu (Viên uống nghệ mùa thu Okinawa) - Sản xuất bởi Kanehide Bio Nhật Bản. Hỗ trợ giảm nguy cơ viêm loét dạ dày tá tràng." />
+  <meta name="keywords" content="viên uống nghệ mùa thu okinawa, DILI, Kanehide Bio, trào ngược dạ dày, nghệ Nhật Bản, curcumin" />
+  <title>Thực phẩm bảo vệ sức khỏe DILI Okinawa – Viên Uống Nghệ Mùa Thu Okinawa | Nhật Bản</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:        #c8922a;
+      --gold-light:  #e8b84b;
+      --gold-pale:   #fdf3dc;
+      --dark:        #1a1209;
+      --dark-2:      #2d1f07;
+      --mid:         #5a3e10;
+      --text:        #3b2f10;
+      --text-light:  #7a6440;
+      --white:       #ffffff;
+      --bg:          #fffdf7;
+      --green:       #2e7d32;
+      --red:         #c62828;
+      --border:      #e8d9b0;
+      --shadow:      0 4px 32px rgba(200,146,42,0.10);
+      --radius:      14px;
+      --transition:  0.3s cubic-bezier(.4,0,.2,1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ──────── HEADER ──────── */
+    .site-header {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+      padding: 18px 0 14px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    }
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .site-logo {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .site-logo .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+    .site-logo .brand-sub {
+      font-size: 0.65rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .header-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200,146,42,0.15);
+      border: 1px solid rgba(200,146,42,0.3);
+      border-radius: 40px;
+      padding: 6px 14px;
+    }
+    .header-badge .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--gold-light);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.3)} }
+    .header-badge span { font-size: 0.7rem; color: var(--gold-light); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+
+    /* ──────── HERO / PRODUCT MAIN ──────── */
+    .product-hero {
+      background: linear-gradient(160deg, #fffdf7 0%, #fef6e0 60%, #fff8ea 100%);
+      padding: 60px 0 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .product-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(200,146,42,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      color: var(--text-light);
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a { color: var(--gold); text-decoration: none; transition: var(--transition); }
+    .breadcrumb a:hover { color: var(--dark); }
+    .breadcrumb .sep { color: var(--border); font-size: 0.7rem; }
+    .breadcrumb .current { color: var(--text); font-weight: 500; }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* Image Side */
+    .product-image-wrap {
+      position: sticky;
+      top: 90px;
+    }
+    .product-image-main {
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--shadow), 0 0 0 1px var(--border);
+      position: relative;
+    }
+    .product-image-main img {
+      width: 100%;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .product-image-main:hover img { transform: scale(1.03); }
+    .badge-imported {
+      position: absolute;
+      top: 14px; left: 14px;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+      color: var(--gold-light);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 40px;
+    }
+    .certifications {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+    .cert-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 5px 12px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--mid);
+      letter-spacing: 0.5px;
+    }
+    .cert-tag svg { width: 13px; height: 13px; }
+
+    /* Info Side */
+    .product-info-wrap {}
+    .product-brand-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--gold-pale);
+      border: 1px solid var(--gold-light);
+      border-radius: 40px;
+      padding: 4px 14px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .product-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+    .product-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .stars { color: #f59e0b; font-size: 1rem; letter-spacing: 1px; }
+    .rating-count { font-size: 0.8rem; color: var(--text-light); }
+
+    .price-block {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .price-main {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      letter-spacing: -0.5px;
+    }
+    .price-per-unit {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.55);
+      margin-top: 2px;
+    }
+    .price-badge {
+      background: rgba(200,146,42,0.2);
+      border: 1px solid rgba(200,146,42,0.4);
+      border-radius: 8px;
+      padding: 8px 14px;
+      text-align: center;
+    }
+    .price-badge .pb-num { font-size: 1.4rem; font-weight: 800; color: var(--gold-light); line-height: 1; }
+    .price-badge .pb-label { font-size: 0.65rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    .highlight-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .highlight-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.875rem;
+      color: var(--text);
+    }
+    .hl-icon {
+      flex-shrink: 0;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: var(--gold-pale);
+      border: 1.5px solid var(--gold-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      color: var(--gold);
+      font-weight: 700;
+      margin-top: 1px;
+    }
+
+    .quantity-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .qty-label { font-size: 0.8rem; font-weight: 600; color: var(--text); min-width: 60px; }
+    .qty-control {
+      display: flex;
+      align-items: center;
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .qty-btn {
+      width: 38px; height: 38px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: var(--text);
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .qty-btn:hover { background: var(--gold-pale); color: var(--gold); }
+    #qty-input {
+      width: 46px; height: 38px;
+      border: none;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      background: transparent;
+      font-family: inherit;
+    }
+    #qty-input:focus { outline: none; }
+
+    .btn-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .btn-primary-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 20px;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+      font-family: inherit;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+    }
+    #btn-addcart {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      color: var(--dark);
+      box-shadow: 0 4px 16px rgba(200,146,42,0.35);
+    }
+    #btn-addcart:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(200,146,42,0.45);
+    }
+    #btn-buynow {
+      background: var(--dark);
+      color: var(--white);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.20);
+    }
+    #btn-buynow:hover {
+      transform: translateY(-2px);
+      background: var(--dark-2);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+    }
+
+    .trust-row {
+      display: flex;
+      gap: 14px;
+      padding: 14px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.75rem;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+    .trust-item svg { width: 16px; height: 16px; color: var(--gold); flex-shrink: 0; }
+
+    /* ──────── DETAIL TABS ──────── */
+    .product-detail-section {
+      padding: 60px 0;
+    }
+    .tabs-nav {
+      display: flex;
+      gap: 4px;
+      border-bottom: 2px solid var(--border);
+      margin-bottom: 36px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .tabs-nav::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      padding: 10px 22px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-light);
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: var(--transition);
+      white-space: nowrap;
+      font-family: inherit;
+    }
+    .tab-btn.active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+    .tab-btn:hover:not(.active) { color: var(--text); }
+
+    .tab-pane { display: none; }
+    .tab-pane.active { display: block; }
+
+    /* ──────── CONTENT STYLING ──────── */
+    .section-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .section-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--gold) 0%, var(--gold-light) 100%);
+    }
+    .section-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-heading .sh-icon {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      background: var(--gold-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .intro-text {
+      font-size: 0.925rem;
+      line-height: 1.8;
+      color: var(--text);
+      text-align: justify;
+    }
+    .intro-text strong { color: var(--dark); }
+
+    /* Ingredients Table */
+    .ingredient-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+    .ingredient-table th {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+      color: var(--gold-light);
+      padding: 10px 16px;
+      text-align: left;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .ingredient-table th:first-child { border-radius: 8px 0 0 0; }
+    .ingredient-table th:last-child { border-radius: 0 8px 0 0; }
+    .ingredient-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    .ingredient-table tr:last-child td { border-bottom: none; }
+    .ingredient-table tr:nth-child(even) td { background: var(--gold-pale); }
+    .ingredient-table tr:nth-child(odd) td { background: #fff; }
+    .ingredient-table .key-ingredient td {
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    /* Usage grid */
+    .usage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 6px;
+    }
+    .usage-card {
+      background: var(--gold-pale);
+      border: 1px solid rgba(200,146,42,0.3);
+      border-radius: 12px;
+      padding: 16px 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .usage-card .uc-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .usage-card .uc-text {
+      font-size: 0.82rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .usage-card .uc-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    /* Steps */
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .step-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .step-num {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      color: var(--dark);
+      font-weight: 800;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-content { font-size: 0.875rem; padding-top: 5px; line-height: 1.7; }
+    .step-content strong { color: var(--dark); }
+
+    /* Warning box */
+    .warning-box {
+      background: #fff8f5;
+      border: 1.5px solid #f5c6b0;
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-top: 8px;
+    }
+    .warning-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .warning-content { font-size: 0.85rem; line-height: 1.7; color: #7a3b1e; }
+    .warning-content strong { display: block; margin-bottom: 6px; color: #c62828; font-size: 0.9rem; }
+    .warning-content ul { padding-left: 16px; }
+    .warning-content li { margin-bottom: 4px; }
+
+    /* Target audience */
+    .audience-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .audience-pill {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 40px;
+      padding: 7px 16px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: var(--transition);
+    }
+    .audience-pill:hover {
+      border-color: var(--gold);
+      background: var(--gold-pale);
+      color: var(--gold);
+    }
+    .audience-pill .ap-icon { font-size: 1rem; }
+
+    /* Comparison section */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .comparison-card {
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      border: 1.5px solid;
+    }
+    .comparison-card.highlight {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+      border-color: var(--gold);
+    }
+    .comparison-card.normal { background: #f5f5f5; border-color: #ddd; }
+    .comparison-card .cc-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .comparison-card.highlight .cc-title { color: var(--gold-light); }
+    .comparison-card.normal .cc-title { color: #666; }
+    .comparison-card .cc-value {
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .comparison-card.highlight .cc-value { color: var(--gold-light); }
+    .comparison-card.normal .cc-value { color: #444; }
+    .comparison-card .cc-label {
+      font-size: 0.7rem;
+      opacity: 0.7;
+    }
+    .comparison-card.highlight .cc-label { color: rgba(255,255,255,0.6); }
+    .comparison-card.normal .cc-label { color: #888; }
+
+    /* ──────── AUTHOR SIGNATURE ──────── */
+    .author-section {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+      padding: 50px 0;
+      margin-top: 40px;
+    }
+    .author-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(200,146,42,0.3);
+      border-radius: 20px;
+      padding: 32px 36px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .author-avatar {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 4px rgba(200,146,42,0.3);
+    }
+    .author-info {}
+    .author-role {
+      font-size: 0.7rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .author-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+    .author-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .author-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 16px;
+      border-radius: 40px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .author-link.facebook {
+      background: #1877f2;
+      color: #fff;
+    }
+    .author-link.facebook:hover { background: #0f63d0; transform: translateY(-2px); }
+    .author-link.zalo {
+      background: #0068ff;
+      color: #fff;
+    }
+    .author-link.zalo:hover { background: #0050cc; transform: translateY(-2px); }
+    .author-note {
+      margin-top: 12px;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.45);
+      font-style: italic;
+    }
+
+    /* ──────── FOOTER ──────── */
+    .site-footer {
+      background: #0d0a04;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .site-footer p {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.3);
+    }
+    .site-footer p span {
+      color: var(--gold);
+    }
+
+    /* ──────── NOTIFICATION TOAST ──────── */
+    .toast {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      background: var(--dark);
+      color: var(--gold-light);
+      border: 1px solid var(--gold);
+      border-radius: 12px;
+      padding: 14px 22px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      z-index: 9999;
+      transform: translateY(80px);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(.4,0,.2,1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+
+    /* ──────── RESPONSIVE ──────── */
+    @media (max-width: 768px) {
+      .product-grid { grid-template-columns: 1fr; gap: 28px; }
+      .product-image-wrap { position: static; }
+      .btn-row { grid-template-columns: 1fr; }
+      .price-block { flex-direction: column; align-items: flex-start; }
+      .author-card { flex-direction: column; text-align: center; }
+      .author-links { justify-content: center; }
+      .section-card { padding: 20px 18px; }
+      .comparison-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* Smooth fade-in for sections */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* Sticky buy bar on mobile */
+    .sticky-buy-bar {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--dark);
+      border-top: 1px solid var(--gold);
+      padding: 12px 20px;
+      z-index: 200;
+      gap: 12px;
+    }
+    @media (max-width: 768px) {
+      .sticky-buy-bar { display: flex; }
+    }
+    .sticky-buy-bar .sticky-btn {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      transition: var(--transition);
+    }
+    .sticky-buy-bar .sticky-btn.primary {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      color: var(--dark);
+    }
+    .sticky-buy-bar .sticky-btn.secondary {
+      background: transparent;
+      color: var(--gold-light);
+      border: 1.5px solid var(--gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-logo">
+        <span class="brand-name">🌿 Dạ Dày Khỏe</span>
+        <span class="brand-sub">Sức khỏe từ thiên nhiên Nhật Bản</span>
+      </div>
+      <div class="header-badge">
+        <div class="dot"></div>
+        <span>Còn hàng</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCT HERO -->
+  <section class="product-hero">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="#">Trang chủ</a>
+        <span class="sep">›</span>
+        <a href="#">Hỗ trợ tiêu hóa</a>
+        <span class="sep">›</span>
+        <span class="current">Viên uống nghệ mùa thu Okinawa DILI</span>
+      </nav>
+
+      <div class="product-grid">
+        <!-- LEFT: Product Image -->
+        <div class="product-image-wrap fade-in">
+          <div class="product-image-main">
+            <span class="badge-imported">🇯🇵 Nhập khẩu Nhật Bản</span>
+            <img
+              src="https://cdn.hstatic.net/products/200001078047/z7710038075775_6d9b2c27d9dcb1863d6228dfb4e046be_4b4f0ac0350245e6bd672358b80e4059.jpg"
+              alt="Thực phẩm bảo vệ sức khỏe DILI Okinawa Osake Wo Kaiteki No Densetu"
+              id="main-product-image"
+              onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22><rect fill=%22%23fdf3dc%22 width=%22400%22 height=%22400%22/><text x=%22200%22 y=%22200%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2248%22>🌿</text><text x=%22200%22 y=%22260%22 text-anchor=%22middle%22 font-size=%2218%22 fill=%22%23c8922a%22>Viên Nghệ Okinawa</text></svg>'"
+            />
+          </div>
+          <div class="certifications">
+            <span class="cert-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              JAS
+            </span>
+            <span class="cert-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              ISO 22000
+            </span>
+            <span class="cert-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              HACCP
+            </span>
+            <span class="cert-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              GMP
+            </span>
+            <span class="cert-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              ISO 9001
+            </span>
+          </div>
+        </div>
+
+        <!-- RIGHT: Product Info -->
+        <div class="product-info-wrap fade-in" style="transition-delay:0.1s">
+          <div class="product-brand-label">
+            ⭐ Nichiei Bussan – Nhật Bản
+          </div>
+          <h1 class="product-title">Thực Phẩm Bảo Vệ Sức Khỏe DILI Okinawa</h1>
+          <p class="product-subtitle">Osake Wo Kaiteki No Densetu · Viên Uống Nghệ Mùa Thu Okinawa</p>
+
+          <div class="rating-row">
+            <span class="stars">★★★★★</span>
+            <span class="rating-count">4.9/5 · 36+ năm uy tín</span>
+          </div>
+
+          <div class="price-block">
+            <div>
+              <div class="price-main">990,000 ₫</div>
+              <div class="price-per-unit">/ 1 hộp · Giao hàng toàn quốc</div>
+            </div>
+            <div class="price-badge">
+              <div class="pb-num">10</div>
+              <div class="pb-label">gói · 5 viên/gói</div>
+            </div>
+          </div>
+
+          <ul class="highlight-list">
+            <li>
+              <span class="hl-icon">✓</span>
+              <span>Hỗ trợ <strong>giảm nguy cơ viêm loét dạ dày tá tràng</strong></span>
+            </li>
+            <li>
+              <span class="hl-icon">✓</span>
+              <span>Curcumin <strong>30mg</strong> + Bột nghệ mùa thu Okinawa <strong>500mg</strong> / 5 viên</span>
+            </li>
+            <li>
+              <span class="hl-icon">✓</span>
+              <span>Tetrahydrocurcumin <strong>gấp 35 lần</strong> so với nghệ thông thường</span>
+            </li>
+            <li>
+              <span class="hl-icon">✓</span>
+              <span>Nhà máy đạt chuẩn <strong>JAS, ISO 22000, ISO 9001, HACCP, GMP</strong></span>
+            </li>
+            <li>
+              <span class="hl-icon">✓</span>
+              <span>Nhập khẩu chính hãng 100% từ Nhật Bản · SKU: <strong>HH024</strong> · Số ĐKSP: <strong>6163/2024/ĐKSP</strong></span>
+            </li>
+          </ul>
+
+          <div class="quantity-row">
+            <span class="qty-label">Số lượng</span>
+            <div class="qty-control">
+              <button class="qty-btn" id="qty-minus" aria-label="Giảm số lượng">−</button>
+              <input type="number" id="qty-input" value="1" min="1" max="99" aria-label="Số lượng" />
+              <button class="qty-btn" id="qty-plus" aria-label="Tăng số lượng">+</button>
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn-primary-cta" id="btn-addcart">
+              🛒 Thêm vào giỏ
+            </button>
+            <button class="btn-primary-cta" id="btn-buynow">
+              ⚡ Mua ngay
+            </button>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Hàng chính hãng
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              Ship toàn quốc
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Tư vấn 24/7
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+              Đổi trả dễ dàng
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DETAIL TABS -->
+  <section class="product-detail-section">
+    <div class="container">
+      <div class="tabs-nav" role="tablist" aria-label="Thông tin sản phẩm">
+        <button class="tab-btn active" id="tab-info-btn" role="tab" aria-controls="tab-info" aria-selected="true" onclick="switchTab('info')">📋 Thông tin sản phẩm</button>
+        <button class="tab-btn" id="tab-ingredients-btn" role="tab" aria-controls="tab-ingredients" aria-selected="false" onclick="switchTab('ingredients')">🧬 Thành phần</button>
+        <button class="tab-btn" id="tab-usage-btn" role="tab" aria-controls="tab-usage" aria-selected="false" onclick="switchTab('usage')">📖 Cách dùng</button>
+        <button class="tab-btn" id="tab-notes-btn" role="tab" aria-controls="tab-notes" aria-selected="false" onclick="switchTab('notes')">⚠️ Lưu ý</button>
+      </div>
+
+      <!-- TAB 1: Thông tin sản phẩm -->
+      <div class="tab-pane active" id="tab-info" role="tabpanel" aria-labelledby="tab-info-btn">
+
+        <div class="section-card fade-in">
+          <h2 class="section-heading">
+            <span class="sh-icon">🌿</span>
+            Giới thiệu sản phẩm
+          </h2>
+          <p class="intro-text">
+            <strong>Thực phẩm bảo vệ sức khỏe DILI Okinawa Osake Wo Kaiteki No Densetu</strong>
+            (Tên gọi khác: <em>Viên uống nghệ mùa thu Okinawa</em>) được sản xuất bởi
+            <strong>Nichiei Bussan – Nhật Bản</strong>. Nhà máy sản xuất đã đạt các chứng nhận quốc tế:
+            <strong>JAS, ISO 22000, ISO 9001, HACCP và GMP</strong> tại Nhật Bản,
+            đảm bảo quy trình quản lý chặt chẽ và an toàn theo tiêu chuẩn cao nhất.
+          </p>
+          <br>
+          <p class="intro-text">
+            Nichiei Bussan luôn kiên trì sử dụng các thành phần xuất phát từ
+            <strong>Okinawa</strong> — vùng đất được mệnh danh là &ldquo;thiên đường trường thọ&rdquo;,
+            nơi cây nghệ mùa thu tích lũy dược tính vượt trội nhờ thổ nhưỡng và khí hậu độc đáo.
+          </p>
+          <br>
+          <p class="intro-text">
+            Sản phẩm được <strong>nhập khẩu 100% chính hãng từ Nhật Bản</strong> về Việt Nam qua
+            đơn vị phân phối chính thức: <strong>CÔNG TY CỔ PHẦN QUỐC TẾ NICHIEI ASIA</strong>.
+          </p>
+          <div style="margin-top:14px;padding:12px 16px;background:var(--gold-pale);border-radius:10px;border:1px solid rgba(200,146,42,0.35);display:flex;flex-wrap:wrap;gap:14px;font-size:0.82rem;color:var(--text)">
+            <span>📋 Số ĐKSP: <strong style="color:var(--gold)">6163/2024/ĐKSP</strong></span>
+            <span>🏷️ JAN Code: <strong style="color:var(--gold)">4571246760844</strong></span>
+            <span>📦 Quy cách: <strong style="color:var(--gold)">5 viên/gói · 10 gói/hộp</strong></span>
+            <span>⚖️ Hàm lượng: <strong style="color:var(--gold)">12.500mg / 5 viên</strong></span>
+          </div>
+        </div>
+
+        <div class="section-card fade-in">
+          <h2 class="section-heading">
+            <span class="sh-icon">🏆</span>
+            Công dụng chính
+          </h2>
+          <div class="usage-grid">
+            <div class="usage-card">
+              <div class="uc-icon">🛡️</div>
+              <div class="uc-text">
+                <div class="uc-label">Bảo vệ dạ dày</div>
+                Hỗ trợ giảm nguy cơ <strong>viêm loét dạ dày tá tràng</strong>, ức chế vi khuẩn H. pylori
+              </div>
+            </div>
+            <div class="usage-card">
+              <div class="uc-icon">⚗️</div>
+              <div class="uc-text">
+                <div class="uc-label">Chống oxy hóa</div>
+                Tetrahydrocurcumin — chất chống oxy hóa mạnh, <strong>gấp 35 lần</strong> nghệ thường
+              </div>
+            </div>
+            <div class="usage-card">
+              <div class="uc-icon">🍺</div>
+              <div class="uc-text">
+                <div class="uc-label">Hỗ trợ gan</div>
+                Giảm triệu chứng <strong>say rượu bia</strong>, cải thiện chức năng gan
+              </div>
+            </div>
+            <div class="usage-card">
+              <div class="uc-icon">🧠</div>
+              <div class="uc-text">
+                <div class="uc-label">Bảo vệ não bộ</div>
+                Ngăn chặn beta-amyloid — tác nhân gây <strong>bệnh Alzheimer</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card fade-in">
+          <h2 class="section-heading">
+            <span class="sh-icon">🌾</span>
+            Nghệ mùa thu Okinawa vs nghệ thông thường
+          </h2>
+          <p class="intro-text" style="margin-bottom:16px">
+            Trong 3 loại nghệ phổ biến ở Okinawa — nghệ mùa xuân, nghệ tím và nghệ mùa thu —
+            <strong>nghệ mùa thu (秋ウコン)</strong> có giá trị dược tính cao nhất và toàn diện nhất:
+          </p>
+          <div class="comparison-grid">
+            <div class="comparison-card highlight">
+              <div class="cc-title">Oxy hoạt tính (ORCA)</div>
+              <div class="cc-value">×2</div>
+              <div class="cc-label">Khả năng hấp thụ oxy hoạt tính cao gấp đôi</div>
+            </div>
+            <div class="comparison-card highlight">
+              <div class="cc-title">Curcumin tổng</div>
+              <div class="cc-value">×3.3</div>
+              <div class="cc-label">Hàm lượng ~6–7% vs nghệ thường ~3–5%</div>
+            </div>
+            <div class="comparison-card highlight">
+              <div class="cc-title">Tetrahydrocurcumin</div>
+              <div class="cc-value">×35</div>
+              <div class="cc-label">Chất chống oxy hóa mạnh nhất trong nghệ</div>
+            </div>
+            <div class="comparison-card normal">
+              <div class="cc-title">Nghệ thường (Curcuma longa)</div>
+              <div class="cc-value">×1</div>
+              <div class="cc-label">Mức cơ bản – cần piperine/Nano để hấp thu</div>
+            </div>
+          </div>
+          <!-- COMPARISON IMAGE: Bảng so sánh chức năng từ tài liệu Nhật Bản -->
+          <div style="margin-top:22px;text-align:center">
+            <p style="font-size:0.78rem;color:var(--text-light);margin-bottom:10px;font-style:italic">
+              📊 Bảng so sánh chức năng 3 loại nghệ Okinawa – Được công bố chính thức tại Nhật Bản
+            </p>
+            <img
+              src="1.TRAO NGUOC DA DAY/.agents/imgi_7_bang-so-sanh-nghe.jpg"
+              alt="Bảng so sánh chức năng 3 loại nghệ Okinawa: nghệ mùa thu, nghệ mùa xuân, nghệ tím – tài liệu Nhật Bản"
+              style="width:100%;max-width:720px;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.13);border:1px solid var(--border);display:inline-block;"
+              loading="lazy"
+            />
+            <p style="font-size:0.72rem;color:var(--text-light);margin-top:8px">
+              ✅ Nghệ mùa thu (秋ウコン) vượt trội với <strong>13 chức năng</strong> được nghiên cứu và công bố, bao gồm: chống ung thư, kích hoạt miễn dịch, chống oxy hóa, chống viêm, kháng khuẩn, kháng virus, hỗ trợ gan, chống béo phì, cải thiện lưu lượng máu và ngăn ngừa mất trí nhớ.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-card fade-in">
+          <h2 class="section-heading">
+            <span class="sh-icon">👥</span>
+            Đối tượng sử dụng
+          </h2>
+          <p class="intro-text" style="margin-bottom:14px">Người trưởng thành. <strong>Đặc biệt phù hợp cho:</strong></p>
+          <div class="audience-pills">
+            <span class="audience-pill"><span class="ap-icon">🤢</span>Người đau dạ dày, ợ hơi, khó tiêu</span>
+            <span class="audience-pill"><span class="ap-icon">🔥</span>Viêm dạ dày, viêm tá tràng</span>
+            <span class="audience-pill"><span class="ap-icon">🍺</span>Người thường xuyên dùng rượu bia</span>
+            <span class="audience-pill"><span class="ap-icon">👴</span>Người lớn tuổi, sức đề kháng kém</span>
+            <span class="audience-pill"><span class="ap-icon">🛡️</span>Người muốn phòng ngừa bệnh tật</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: Thành phần -->
+      <div class="tab-pane" id="tab-ingredients" role="tabpanel" aria-labelledby="tab-ingredients-btn">
+        <div class="section-card fade-in">
+          <h2 class="section-heading">
+            <span class="sh-icon">🧬</span>
+            Thành phần (trong 5 viên)
+          </h2>
+          <table class="ingredient-table" aria-label="Bảng thành phần dinh dưỡng">
+            <thead>
+              <tr>
+                <th>Thành phần</th>
+                <th>Hàm lượng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Năng lượng</td>
+                <td>5,2 Kcal</td>
+              </tr>
+              <tr>
+                <td>Chất đạm</td>
+                <td>40 mg</td>
+              </tr>
+              <tr>
+                <td>Chất béo</td>
+                <td>110 mg</td>
+              </tr>
+              <tr>
+                <td>Carbohydrate</td>
+                <td>1.000 mg</td>
+              </tr>
+              <tr>
+                <td>Muối tương đương</td>
+                <td>0,5 mg</td>
+              </tr>
+              <tr class="key-ingredient">
+                <td>⭐ Curcumin (hoạt chất chính)</td>
+                <td>30mg</td>
+              </tr>
+              <tr class="key-ingredient">
+                <td>⭐ Bột nghệ mùa thu Okinawa</td>
+                <td>500mg</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section-card fade-in">
+          <h2 class="section-heading">
+            <span class="sh-icon">🔬</span>
+            Cơ chế hoạt động của Curcumin
+          </h2>
+          <p class="intro-text">
+            Củ nghệ có chứa nhiều thành phần khác nhau. Trong số này, <strong>Curcumin</strong> — sắc tố chính
+            và loại diallheptanoid — đang thu hút sự chú ý của các nhà nghiên cứu toàn cầu.
+          </p>
+          <br>
+          <p class="intro-text">
+            Khi dùng bằng đường uống, Curcumin được chuyển hóa thành <strong>Tetrahydrocurcumin</strong> —
+            một hoạt chất chống oxy hóa mạnh trong đường ruột. Nó cũng có tác dụng:
+          </p>
+          <br>
+          <div class="usage-grid">
+            <div class="usage-card">
+              <div class="uc-icon">🧪</div>
+              <div class="uc-text">
+                <div class="uc-label">Bài tiết mật</div>
+                Lợi mật, thúc đẩy bài tiết mật và lợi tiểu
+              </div>
+            </div>
+            <div class="usage-card">
+              <div class="uc-icon">🦠</div>
+              <div class="uc-text">
+                <div class="uc-label">Kháng khuẩn</div>
+                Diệt khuẩn, kháng khuẩn, ngăn H. pylori gây loét dạ dày
+              </div>
+            </div>
+            <div class="usage-card">
+              <div class="uc-icon">🫀</div>
+              <div class="uc-text">
+                <div class="uc-label">Gan & Tiêu hóa</div>
+                Hiệu quả với viêm gan và rối loạn chức năng gan
+              </div>
+            </div>
+            <div class="usage-card">
+              <div class="uc-icon">🧠</div>
+              <div class="uc-text">
+                <div class="uc-label">Não bộ (UCLA)</div>
+                Ngăn beta-amyloid — tác nhân gây Alzheimer (Công bố ĐH UCLA)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: Cách dùng -->
+      <div class="tab-pane" id="tab-usage" role="tabpanel" aria-labelledby="tab-usage-btn">
+        <div class="section-card fade-in">
+          <h2 class="section-heading">
+            <span class="sh-icon">📖</span>
+            Hướng dẫn sử dụng
+          </h2>
+          <div class="steps-list">
+            <div class="step-item">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                Uống <strong>1 gói / 5 viên / ngày</strong> cùng nước ấm 60°C hoặc nước lọc thường.
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                Dùng <strong>trước khi ăn 30 phút</strong> để đạt hiệu quả tốt nhất.
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                Có thể <strong>pha với nước ấm và mật ong</strong> uống vào buổi sáng khi bụng đói.
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                Nếu dùng hỗ trợ rượu bia: uống <strong>trước khi sử dụng 30–60 phút</strong>
+                để giảm thiểu triệu chứng khó chịu do say bia rượu.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card fade-in">
+          <h2 class="section-heading">
+            <span class="sh-icon">💡</span>
+            Mẹo dùng hiệu quả
+          </h2>
+          <div class="usage-grid">
+            <div class="usage-card">
+              <div class="uc-icon">☀️</div>
+              <div class="uc-text">
+                <div class="uc-label">Buổi sáng</div>
+                Pha với nước ấm + mật ong, uống khi bụng đói để hấp thụ tốt nhất
+              </div>
+            </div>
+            <div class="usage-card">
+              <div class="uc-icon">🌡️</div>
+              <div class="uc-text">
+                <div class="uc-label">Nhiệt độ nước</div>
+                Nên dùng nước ấm 60°C giúp curcumin hòa tan và hấp thụ hiệu quả hơn
+              </div>
+            </div>
+            <div class="usage-card">
+              <div class="uc-icon">📅</div>
+              <div class="uc-text">
+                <div class="uc-label">Dùng đều đặn</div>
+                Hiệu quả rõ rệt khi dùng liên tục ít nhất 1–3 tháng, không bỏ ngày
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: Lưu ý -->
+      <div class="tab-pane" id="tab-notes" role="tabpanel" aria-labelledby="tab-notes-btn">
+        <div class="section-card fade-in">
+          <h2 class="section-heading">
+            <span class="sh-icon">⚠️</span>
+            Lưu ý quan trọng
+          </h2>
+          <div class="warning-box">
+            <div class="warning-icon">⚠️</div>
+            <div class="warning-content">
+              <strong>Đọc kỹ trước khi sử dụng</strong>
+              <ul>
+                <li>Sản phẩm này <strong>không phải là thuốc</strong>, không có tác dụng thay thế thuốc chữa bệnh.</li>
+                <li>Ngưng sử dụng nếu có bất cứ triệu chứng bất thường nào.</li>
+                <li>Tuỳ vào cơ địa mỗi người, hiệu quả có thể khác nhau.</li>
+                <li>Không dùng cho trẻ em dưới 15 tuổi, phụ nữ mang thai hoặc đang cho con bú khi chưa có chỉ định của bác sĩ.</li>
+                <li>Bảo quản nơi thoáng mát, tránh ánh nắng trực tiếp, để xa tầm tay trẻ em.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </section>
+
+  <!-- AUTHOR SIGNATURE -->
+  <section class="author-section" id="author">
+    <div class="container">
+      <div class="author-card">
+        <div class="author-avatar">👩‍⚕️</div>
+        <div class="author-info">
+          <div class="author-role">Biên soạn bởi</div>
+          <div class="author-name">Coach Trầm Dàng</div>
+          <p style="color:rgba(255,255,255,0.55);font-size:0.82rem;margin-bottom:14px">
+            Chuyên gia hỗ trợ sức khỏe tiêu hóa · Tư vấn dinh dưỡng & lối sống lành mạnh
+          </p>
+          <div class="author-links">
+            <a
+              href="https://www.facebook.com/Coachtramdang"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="author-link facebook"
+              id="link-facebook"
+              aria-label="Kết nối với Coach Trầm Dàng qua Facebook"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a
+              href="https://zalo.me/0862728141"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="author-link zalo"
+              id="link-zalo"
+              aria-label="Kết nối với Coach Trầm Dàng qua Zalo"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 16.893c-.09.254-.375.425-.656.314a8.952 8.952 0 0 1-2.44-1.513 8.986 8.986 0 0 1-1.513-2.44c-.111-.281.06-.566.314-.656l1.043-.37c.253-.09.534.06.624.314.062.175.134.347.217.513l-1.028.365c.26.53.614 1.023 1.048 1.457a6.39 6.39 0 0 0 1.457 1.048l.364-1.028c.167.082.339.155.513.217.254.09.404.37.314.624l-.257.155z"/></svg>
+              Zalo: 0862 728 141
+            </a>
+          </div>
+          <p class="author-note">
+            💬 Liên hệ để được tư vấn miễn phí về chế độ ăn uống, lối sống hỗ trợ tiêu hóa và trào ngược dạ dày
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 · Trang thông tin sức khỏe · Biên soạn: <span>Coach Trầm Dàng</span> · Thực phẩm chức năng không thay thế thuốc điều trị</p>
+    </div>
+  </footer>
+
+  <!-- Sticky Buy Bar (mobile) -->
+  <div class="sticky-buy-bar" id="sticky-bar" role="complementary">
+    <button class="sticky-btn secondary" onclick="triggerAddCart()" aria-label="Thêm vào giỏ hàng">🛒 Thêm vào giỏ</button>
+    <button class="sticky-btn primary" onclick="triggerBuyNow()" aria-label="Mua ngay">⚡ Mua ngay</button>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+    <span id="toast-icon">✅</span>
+    <span id="toast-msg">Đã thêm vào giỏ hàng!</span>
+  </div>
+
+  <script>
+    // Tab switching
+    function switchTab(id) {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+      document.getElementById('tab-' + id + '-btn').classList.add('active');
+      document.getElementById('tab-' + id + '-btn').setAttribute('aria-selected', 'true');
+      document.getElementById('tab-' + id).classList.add('active');
+    }
+
+    // Quantity control
+    const qtyInput = document.getElementById('qty-input');
+    document.getElementById('qty-minus').addEventListener('click', () => {
+      if (+qtyInput.value > 1) qtyInput.value = +qtyInput.value - 1;
+    });
+    document.getElementById('qty-plus').addEventListener('click', () => {
+      if (+qtyInput.value < 99) qtyInput.value = +qtyInput.value + 1;
+    });
+
+    // Toast notification
+    function showToast(msg, icon = '✅') {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-msg').textContent = msg;
+      document.getElementById('toast-icon').textContent = icon;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    function triggerAddCart() {
+      const qty = qtyInput.value;
+      showToast(`Đã thêm ${qty} hộp vào giỏ hàng!`, '🛒');
+    }
+    function triggerBuyNow() {
+      showToast('Đang chuyển đến trang thanh toán...', '⚡');
+      setTimeout(() => {
+        document.getElementById('author').scrollIntoView({ behavior: 'smooth' });
+      }, 1000);
+    }
+
+    document.getElementById('btn-addcart').addEventListener('click', triggerAddCart);
+    document.getElementById('btn-buynow').addEventListener('click', triggerBuyNow);
+
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Hide sticky bar when product buttons are visible
+    const productSection = document.querySelector('.product-hero');
+    const stickyBar = document.getElementById('sticky-bar');
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        stickyBar.style.display = e.isIntersecting ? 'none' : 'flex';
+      });
+    }, { threshold: 0.1 });
+    heroObserver.observe(productSection);
+  </script>
+
+</body>
+</html>
